@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="node_modules/leaflet/dist/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body>
+		<section id="controls">
+			<select id="tracks"></select> |
+			<button id="btn-flip">Flip</button> |
+			<button id="btn-fit">Fit map</button> |
+			<button><label for="file">Choose file</label></button> |
+			<input type="file" id="file" style="display: none" multiple />
+			
+			Color
+			<label for="clrMaps">map</label> <select id="clrMaps" class="pico"></select> |
+			<input type="checkbox" id="clrRevert" class="pico" /> <label for="clrRevert">revert</label> |
+			<input type="checkbox" id="clrInvert" class="pico" /> <label for="clrInvert">invert</label> |
+			<label for="clrBands">bands</label> <input type="text" id="clrBands" class="pico" value="0" />
+		</section>
+		<div id="cnt-main">
+			<section id="cnt-infs" class="rowsec"><div id="sec-infs">
+				<table id="inf-track" class="infsec">
+					<tr><td>Points</td><td class="pico">points</td></tr>
+					<tr><td>Distance</td><td class="pico">dist | dist</td></tr>
+					<tr><td>Start</td><td class="pico">start | date</td></tr>
+					<tr><td>End</td><td class="pico">end | date</td></tr>
+					<tr><td>Time</td><td class="pico">time | duration</td></tr>
+					<tr><td>Total avg</td><td class="pico">totalAvg | speed</td></tr>
+					<tr><td>Moving</td><td class="pico">moving</td></tr>
+					<tr><td>Still</td><td class="pico">still</td></tr>
+					<tr id="pnt-min" class="li-point"><td>Min speed</td><td class="pico">min | speed</td></tr>
+					<tr id="pnt-max" class="li-point"><td>Max speed</td><td class="pico">max | speed</td></tr>
+					<tr><td>Avg speed</td><td class="pico">avg | speed</td></tr>
+					<tr id="pnt-avgMin" class="li-point"><td>Min avg</td><td class="pico">avgMin | speed</td></tr>
+					<tr id="pnt-avgMax" class="li-point"><td>Max avg</td><td class="pico">avgMax | speed</td></tr>
+					<tr><td>Avg avg</td><td class="pico">avgAvg | speed</td></tr>
+				</table>
+				
+				<table id="inf-point" class="infsec">
+					<tr><td>Lat</td><td class="pico">lat | latLng</td></tr>
+					<tr><td>Lon</td><td class="pico">lon | latLng</td></tr>
+					<tr><td>Time</td><td class="pico">time | time</td></tr>
+					<tr><td>Speed</td><td class="pico">speed | speed</td></tr>
+					<tr><td>Δtime</td><td class="pico">dtime | sec</td></tr>
+					<tr><td>Dist</td><td class="pico">dist | dist</td></tr>
+					<tr><td>Avg speed</td><td class="pico">avgSpeed | speed</td></tr>
+				</table>
+				
+				<div id="cnt-points" class="infsec"><div id="cnt-cnt-points">
+					<table id="points">
+						<tr><td>Points</td></tr>
+					</table>
+				</div></div>
+			</div></section>
+			<section id="sec-map" class="rowsec">
+				<div id="map"></div>
+			</section>
+		</div>
+		
+		<!-- <textarea id="debug"></textarea> -->
+		
+		<script src="node_modules/leaflet/dist/leaflet.js"></script>
+		<script src="TileLayer.GrayScale.js"></script>
+		<script src="togeojson.js"></script>
+		
+		<script src="gpx.js"></script>
+		<script src="picotemplate.js"></script>
+		<script src="picoinput.js"></script>
+		<script src="colour.js"></script>
+		
+		<script src="index.js"></script>
+	</body>
+</html>

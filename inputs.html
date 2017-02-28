@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<style>
+			#tab,td{
+				border-collapse: collapse;
+				border: 1px solid #CCC;
+				padding: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="tab">
+			<tr>
+				<td><label for="button">button</label></td>
+				<td><input class="pi" type="button" id="button" value="button" /></td>
+				<td class="pt">button | type</td><td class="pt">button</td>
+			</tr>
+			<tr>
+				<td><label for="checkbox">checkbox</label></td>
+				<td><input class="pi" type="checkbox" id="checkbox" value="a" /></td>
+				<td class="pt">checkbox | type</td><td class="pt">checkbox</td>
+			</tr>
+			<tr>
+				<td><label for="checkbox-n">checkbox-n</label></td>
+				<td><input class="pi" type="checkbox" id="checkbox-n" /></td>
+				<td class="pt">checkbox-n | type</td><td class="pt">checkbox-n</td>
+			</tr>
+			<tr>
+				<td><label for="color">color</label></td>
+				<td><input class="pi" type="color" id="color" /></td>
+				<td class="pt">color | type</td><td class="pt">color</td>
+			</tr>
+			<tr>
+				<td><label for="date">date</label></td>
+				<td><input class="pi" type="date" id="date" /></td>
+				<td class="pt">date | type</td><td class="pt">date</td>
+			</tr>
+			<tr>
+				<td><label for="datetime">datetime</label></td>
+				<td><input class="pi" type="datetime" id="datetime" /></td>
+				<td class="pt">datetime | type</td><td class="pt">datetime</td>
+			</tr>
+			<tr>
+				<td><label for="datetime-local">datetime-local</label></td>
+				<td><input class="pi" type="datetime-local" id="datetime-local" /></td>
+				<td class="pt">datetime-local | type</td><td class="pt">datetime-local</td>
+			</tr>
+			<tr>
+				<td><label for="email">email</label></td>
+				<td><input class="pi" type="email" id="email" /></td>
+				<td class="pt">email | type</td><td class="pt">email</td>
+			</tr>
+			<tr>
+				<td><label for="file">file</label></td>
+				<td><input class="pi" type="file" id="file" /></td>
+				<td class="pt">file | type</td><td class="pt">file</td>
+			</tr>
+			<tr>
+				<td><label for="file-m">file-m</label></td>
+				<td><input class="pi" type="file" id="file-m" multiple /></td>
+				<td class="pt">file-m | type</td><td class="pt">file-m</td>
+			</tr>
+			<tr>
+				<td><label for="image">image</label></td>
+				<td><input class="pi" type="image" id="image" /></td>
+				<td class="pt">image | type</td><td class="pt">image</td>
+			</tr>
+			<tr>
+				<td><label for="month">month</label></td>
+				<td><input class="pi" type="month" id="month" /></td>
+				<td class="pt">month | type</td><td class="pt">month</td>
+			</tr>
+			<tr>
+				<td><label for="number">number</label></td>
+				<td><input class="pi" type="number" id="number" /></td>
+				<td class="pt">number | type</td><td class="pt">number</td>
+			</tr>
+			<tr>
+				<td><label for="password">password</label></td>
+				<td><input class="pi" type="password" id="password" /></td>
+				<td class="pt">password | type</td><td class="pt">password</td>
+			</tr>
+			<tr>
+				<td><label for="radio">radio</label></td>
+				<td>
+					<input class="pi" type="radio" id="radio1" name="radio" value="0" />
+					<input class="pi" type="radio" id="radio1" name="radio" value="1" />
+				</td>
+				<td class="pt">radio | type</td><td class="pt">radio</td>
+			</tr>
+			<tr>
+				<td><label for="range">range</label></td>
+				<td><input class="pi" type="range" id="range" /></td>
+				<td class="pt">range | type</td><td class="pt">range</td>
+			</tr>
+			<tr>
+				<td><label for="reset">reset</label></td>
+				<td><input class="pi" type="reset" id="reset" /></td>
+				<td class="pt">reset | type</td><td class="pt">reset</td>
+			</tr>
+			<tr>
+				<td><label for="search">search</label></td>
+				<td><input class="pi" type="search" id="search" /></td>
+				<td class="pt">search | type</td><td class="pt">search</td>
+			</tr>
+			<tr>
+				<td><label for="select">select</label></td>
+				<td>
+					<select class="pi" id="select">
+						<option class="pi" id="option0" value="0">zero</option>
+						<option class="pi" id="option1" value="1">one</option>
+						<option class="pi" id="option2" value="2">two</option>
+					</select>
+				</td>
+				<td class="pt">select | type</td><td class="pt">select</td>
+			</tr>
+			<tr>
+				<td><label for="select-m">select-m</label></td>
+				<td>
+					<select class="pi" id="select-m" multiple>
+						<option class="pi" id="option-m0" value="1">one</option>
+						<option class="pi" id="option-m1" value="2">two</option>
+						<option class="pi" id="option-m2" value="3">three</option>
+						<option class="pi" id="option-m3" value="4">four</option>
+					</select>
+				</td>
+				<td class="pt">select-m | type</td><td class="pt">select-m</td>
+			</tr>
+			<tr>
+				<td><label for="submit">submit</label></td>
+				<td><input class="pi" type="submit" id="submit" /></td>
+				<td class="pt">submit | type</td><td class="pt">submit</td>
+			</tr>
+			<tr>
+				<td><label for="tel">tel</label></td>
+				<td><input class="pi" type="tel" id="tel" /></td>
+				<td class="pt">tel | type</td><td class="pt">tel</td>
+			</tr>
+			<tr>
+				<td><label for="text">text</label></td>
+				<td><input class="pi" type="text" id="text" /></td>
+				<td class="pt">text | type</td><td class="pt">text</td>
+			</tr>
+			<tr>
+				<td><label for="textarea">textarea</label></td>
+				<td><textarea class="pi" id="textarea"></textarea></td>
+				<td class="pt">textarea | type</td><td class="pt">textarea</td>
+			</tr>
+			<tr>
+				<td><label for="time">time</label></td>
+				<td><input class="pi" type="time" id="time" /></td>
+				<td class="pt">time | type</td><td class="pt">time</td>
+			</tr>
+			<tr>
+				<td><label for="url">url</label></td>
+				<td><input class="pi" type="url" id="url" /></td>
+				<td class="pt">url | type</td><td class="pt">url</td>
+			</tr>
+			<tr>
+				<td><label for="week">week</label></td>
+				<td><input class="pi" type="week" id="week" /></td>
+				<td class="pt">week | type</td><td class="pt">week</td>
+			</tr>
+		</table>
+		
+		<script src="picotemplate.js"></script>
+		<script src="picoinput.js"></script>
+		<script>
+			const elTab = document.getElementById('tab'),
+				pt = new PicoTemplate({
+					root: elTab,
+					class: 'pt',
+					formats: {type: (v) => Array.isArray(v) ? 'array' : typeof v}
+				}),
+				pi = new PicoInput({
+					root: elTab,
+					class: 'pi',
+					callback: pt.set.bind(pt)
+				});
+		</script>
+	</body>
+</html>
